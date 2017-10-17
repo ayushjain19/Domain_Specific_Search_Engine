@@ -21,7 +21,7 @@ It is designed into three basic parts:
 
 Running time:
   - For creating inverted index for 100 documents: 3.1 secs
-  - For search querry: 0.02 secs
+  - For search query: 0.02 secs
 
 
 
@@ -36,12 +36,12 @@ Following two files carry out the task for the given domain specific search engi
       - tf-idf is calculated and stored in the data structure
       - Data Structure is stored in a .pickle file
  
- - ask_querry.py:
-    - querry is taken as input through command line
+ - ask_query.py:
+    - query is taken as input through command line
     - .pickle file is read and data structure is stored locally
     - words are tokenized
     - stop words are handled
-    - inverted index is created just for the querry
+    - inverted index is created just for the query
     - score is calculated for every document
     - scores are sorted and top documents are displayed
 
@@ -61,5 +61,5 @@ Following two files carry out the task for the given domain specific search engi
 		For creating inverted index:
 			python3 create_inverted_index.py
 
-		For running the querry:
-			python3 ask_querry.py <your querry here>
+	For running the query:
+		`python3 ask_query.py <your query here>`
